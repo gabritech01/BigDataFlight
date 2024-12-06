@@ -1,0 +1,14 @@
+Analysis Results:
+Min Price: 242.6, Max Price: 601.61, Average Price: 300.4871428571429
+
+Top 3 cheapest flights on the specified date:
+Flight: 7e9c5048496171ba9120473055707b00 | Fare: 33.98 | Date: 2022-05-27 | Starting Airport: SFO | Destination Airport: LAX
+Flight: cec3a6e8e422d88d82867a7cda6fcb70 | Fare: 35.97 | Date: 2022-05-27 | Starting Airport: MIA | Destination Airport: BOS
+Flight: fb6e53d0b5966aea835653a4c491fe2b | Fare: 43.6 | Date: 2022-05-27 | Starting Airport: BOS | Destination Airport: LGA
+
+Top 3 cheapest flights from the specified starting airport:
+Flight: 93cbeb4007d5c91c5e51ae14a7cc0f66 | Fare: 30.69 | Date: 2022-04-30 | Starting Airport: LGA | Destination Airport: MIA
+Flight: 2e45765b717ea499493b6403d8fd6569 | Fare: 30.69 | Date: 2022-05-07 | Starting Airport: LGA | Destination Airport: MIA
+Flight: cfc9f4f5e03ad89b41091591232ff3fa | Fare: 30.69 | Date: 2022-05-03 | Starting Airport: LGA | Destination Airport: MIA
+
+Elapsed time: 25.64 seconds
