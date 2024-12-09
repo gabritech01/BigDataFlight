@@ -62,23 +62,23 @@ analyze_prices(starting_airport="LGA", destination_airport="DTW", flight_date="2
 
 The output is generated in a `.txt` file.
 
-![Screenshot 2024-12-06 alle 17.08.47.png](Big%20Data%20project%201579908ab545803f8685e6d7fef78531/Screenshot_2024-12-06_alle_17.08.47.png)
+![screenshot](imgdoc/screenshot.png)
 
 **Extra:** I implemented a search feature on the dataset that provides suggestions to the user based on their query, specifically the 3 cheapest flights for the selected date and the 3 cheapest flights from the departure airport.
 
 ## 7) Performance evaluation (speed-up with different number of vCPUs and nodes, identified overheads, optimizations done…).
 
-![CPU utilisation.png](Big%20Data%20project%201579908ab545803f8685e6d7fef78531/CPU_utilisation.png)
+![CPU utilisation.png](imgdoc/CPU_utilisation.png)
 
-![Disk bytes.png](Big%20Data%20project%201579908ab545803f8685e6d7fef78531/Disk_bytes.png)
+![Disk bytes.png](imgdoc/Disk_bytes.png)
 
-![Disk operations.png](Big%20Data%20project%201579908ab545803f8685e6d7fef78531/Disk_operations.png)
+![Disk operations.png](imgdoc/Disk_operations.png)
 
-![YARN memory.png](Big%20Data%20project%201579908ab545803f8685e6d7fef78531/YARN_memory.png)
+![YARN memory.png](imgdoc/YARN_memory.png)
 
-![YARN NodeManagers.png](Big%20Data%20project%201579908ab545803f8685e6d7fef78531/YARN_NodeManagers.png)
+![YARN NodeManagers.png](imgdoc/YARN_NodeManagers.png)
 
-![YARN pending memory.png](Big%20Data%20project%201579908ab545803f8685e6d7fef78531/YARN_pending_memory.png)
+![YARN pending memory.png](imgdoc/YARN_pending_memory.png)
 
 The analysis of Spark job metrics revealed inconsistent CPU usage, with peaks of 50% and frequent idle periods, likely related to I/O operations or suboptimal resource configurations. Disk activity was moderate, with peaks of 15 operations per second and decreasing throughput, suggesting that the job does not fully utilize the disk’s capabilities. YARN memory usage fluctuated between 0 and 30 GiB, indicating intermittent utilization, while peaks in pending memory highlighted slowdowns caused by resource contention.
 
@@ -96,17 +96,17 @@ gcloud dataproc jobs submit pyspark     --cluster mycluster     --region europe-
 
 ## Re-evaluation and comparison
 
-![CPU utilisation (1).png](Big%20Data%20project%201579908ab545803f8685e6d7fef78531/CPU_utilisation_(1).png)
+![CPU utilisation (1).png](imgdoc/CPU_utilisation_.png)
 
-![Disk bytes (1).png](Big%20Data%20project%201579908ab545803f8685e6d7fef78531/Disk_bytes_(1).png)
+![Disk bytes (1).png](imgdoc/Disk_bytes_.png)
 
-![Disk operations (1).png](Big%20Data%20project%201579908ab545803f8685e6d7fef78531/Disk_operations_(1).png)
+![Disk operations (1).png](imgdoc/Disk_operations_.png)
 
-![YARN memory (1).png](Big%20Data%20project%201579908ab545803f8685e6d7fef78531/YARN_memory_(1).png)
+![YARN memory (1).png](imgdoc/YARN_memory_.png)
 
-![YARN NodeManagers (1).png](Big%20Data%20project%201579908ab545803f8685e6d7fef78531/YARN_NodeManagers_(1).png)
+![YARN NodeManagers (1).png](imgdoc/YARN_NodeManagers_.png)
 
-![YARN pending memory (1).png](Big%20Data%20project%201579908ab545803f8685e6d7fef78531/YARN_pending_memory_(1).png)
+![YARN pending memory (1).png](imgdoc/YARN_pending_memory_.png)
 
 During the project, I analyzed system performance through tests on configurations with a different number of nodes. The first configuration, with two nodes, recorded an execution time of 36.46 seconds to process the dataset, while scaling up to four nodes reduced the elapsed time to 25.64 seconds. This improvement highlights a significant increase in efficiency thanks to the more advanced parallelization enabled by a greater number of nodes, demonstrating the importance of proper scalability in distributed systems.
 
