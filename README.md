@@ -27,6 +27,7 @@ The combination of Big Data and Cloud technologies is not just a technological c
 ### 3) Description of the data (Where does it come from? How was it acquired? What does it mean? What format is it? How big is it? 1 GB minimum).
 
 The dataset, sourced from Kaggle, weighs approximately 1.8 GB and meets the size requirements for Big Data analysis. It is in CSV format, ideal for distributed processing with Apache Spark, and includes ten columns detailing various flight attributes. Key columns include `legId` (a unique identifier for each flight), `searchDate` and `flightDate` (indicating the search and flight dates), `startingAirport` and `destinationAirport` (the departure and arrival airports), and `totalFare` (the flight cost). Other columns provide information on travel duration, remaining seats, and distance. The dataset’s variety and size make it an excellent candidate for large-scale analysis, simulating a real-world Big Data scenario.
+Dataset source: https://www.kaggle.com/datasets/dyliee/flight-prices-preprocessed
 
 ### 4) Description of the Application, Programming Model(s), Platform, and Infrastructure
 
